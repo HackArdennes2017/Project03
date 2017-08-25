@@ -1,3 +1,9 @@
 [
-  {}
+	{ "name":"CAMPINGS"},
+	{ "name":"ACHATS BAYARDS"},
+	{ "name":"POINTS INFORMATION"},
+	{ "name":"BUVETTES"},
+	{ "name":"RESTAURATION"},	
+	{ "name":"SERVICES"},
+
 ]

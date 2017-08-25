@@ -1,3 +1,174 @@
 [
-  {}
+  {
+  "Service":"CAMPINGS", 
+  "name":"CAMPING 1 - AU DORMEUR DU VAL",
+  "description":"Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival",
+  },
+  
+  {
+  "Service":"CAMPINGS", 
+  "name":"CAMPING 2 - CAMPING DE LA VIEILLE MEUSE",
+  "description":"Tu as besoin d’un minimum de calme et d’espace pour dormir comme un bébé et ce ne sont pas 10 minutes de marche qui te décourageront.",
+  },  
+
+    {
+  "Service":"CAMPINGS", 
+  "name":"TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
+  "description":"Vivez l’aventure du camping du Cabaret Vert dans votre TIPI.",
+  },
+
+    {
+  "Service":"ACHATS BAYARDS", 
+  "name":"Stand 1",
+  "description":"",
+  },
+
+    {
+  "Service":"ACHATS BAYARDS", 
+  "name":"Stand 2",
+  "description":"",
+  },
+  
+     {
+  "Service":"ACHATS BAYARDS", 
+  "name":"Stand 3",
+  "description":"",
+  }, 
+  
+     {
+  "Service":"POINTS INFORMATION", 
+  "name":"point-information ST JULIEN",
+  "description":"",
+  },   
+  
+      {
+  "Service":"POINTS INFORMATION", 
+  "name":"point-information du festival",
+  "description":"",
+  },    
+  
+        {
+  "Service":"BUVETTES", 
+  "name":"Eul bar du coin (1)",
+  "description":"",
+  },
+  
+  "Service":"BUVETTES", 
+  "name":"La Macérienne - sans alcool (2)",
+  "description":"",
+  },  
+  
+  "Service":"BUVETTES", 
+  "name":"Bar à eau (3)",
+  "description":"",
+  },  
+    
+  "Service":"BUVETTES", 
+  "name":"Bar le Groin Groin (4)",
+  "description":"",
+  },    
+  
+  "Service":"BUVETTES", 
+  "name":"Le Temps des cérise (5)",
+  "description":"",
+  },   
+  
+  "Service":"BUVETTES", 
+  "name":"Bar à café (6)",
+  "description":"",
+  },     
+ 
+   "Service":"BUVETTES", 
+  "name":"le Bateau ivre (7)",
+  "description":"",
+  },     
+ 
+ 
+   "Service":"BUVETTES", 
+  "name":"La R'Quinqure (8)",
+  "description":"",
+  },     
+  
+   "Service":"BUVETTES", 
+  "name":"Bar à Vins (9)",
+  "description":"",
+  },    
+ 
+    "Service":"BUVETTES", 
+  "name":"Bar Ethnik (10)",
+  "description":"",
+  },   
+ 
+     "Service":"BUVETTES", 
+  "name":"Bar La Lichette (11)",
+  "description":"",
+  },   
+ 
+      "Service":"BUVETTES", 
+  "name":"L'Absolument Moderne (12)",
+  "description":"",
+  },   
+ 
+      "Service":"RESTAURATION", 
+  "name":"La falafelle (13)",
+  "description":"",
+  },    
+ 
+       "Service":"RESTAURATION", 
+  "name":"Omelette Ardennaises (14)",
+  "description":"",
+  },   
+ 
+       "Service":"RESTAURATION", 
+  "name":"Burger d'Ardenne (15)",
+  "description":"",
+  },    
+ 
+       "Service":"RESTAURATION", 
+  "name":"Friterie (16)",
+  "description":"",
+  },     
+ 
+       "Service":"RESTAURATION", 
+  "name":"Au plaisir gourmand (17)",
+  "description":"",
+  }, 
+
+  
+       "Service":"RESTAURATION", 
+  "name":"Le Bar Back (18)",
+  "description":"",
+  },   
+  
+       "Service":"RESTAURATION", 
+  "name":"Friterie et Sandwichs (19)",
+  "description":"",
+  },    
+
+       "Service":"RESTAURATION", 
+  "name":"Pop Corn (20)",
+  "description":"",
+  },  
+
+       "Service":"SERVICES", 
+  "name":"Poste secours",
+  "description":"",
+  },    
+  
+       "Service":"SERVICES", 
+  "name":"Toilettes 1",
+  "description":"",
+  },
+  
+        "Service":"SERVICES", 
+  "name":"Toilettes 2",
+  "description":"",
+  }, 
+  
+       "Service":"SERVICES", 
+  "name":"Toilettes 3",
+  "description":"",
+  },  
+  
+  
 ]
