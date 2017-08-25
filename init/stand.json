@@ -18,31 +18,43 @@
     "type": 3,
     "name": "TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
     "description": "Vivez l’aventure du camping du Cabaret Vert dans votre TIPI.",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "type": 4,
     "name": "Stand 1",
     "description": "",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "type": 4,
     "name": "Stand 2",
     "description": "",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "type": 4,
     "name": "Stand 3",
     "description": "",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "type": 5,
     "name": "point-information ST JULIEN",
     "description": "",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "type": 5,
     "name": "point-information du festival",
     "description": "",
+    "GPSlongitude": "",
+    "GPSlatitude": ""
   },
   {
     "Service": "BUVETTES",
