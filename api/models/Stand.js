@@ -33,6 +33,12 @@ module.exports = {
     votes: {
       collection: 'vote',
       via: 'voteTarget'
+    },
+    locationZone: {
+      model: 'zone'
+    },
+    planId: {
+      type: 'integer'
     }
   }
 };
