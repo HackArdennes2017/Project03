@@ -24,6 +24,9 @@ const req = (name, bodyReq) => {
       if (error) {
         reject(error);
       }
+      else if (response.statusCode !== 201) {
+        reject(body);
+      }
       else {
         resolve(body);
       }
@@ -87,7 +90,15 @@ const run = () => {
         }
       });
     }
-  ]);
+  ],
+    (err) => {
+      if (err) {
+        console.error(err);
+      }
+      else {
+        console.log('Done');
+      }
+    });
 };
 
 run ();
