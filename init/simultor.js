@@ -48,11 +48,11 @@ const reqGet = (name) => {
 };
 
 new CronJob('* * * * * *', function() {
-  const userId = Math.round(Math.random() * userLimit + 1);
-  const standID = Math.round(Math.random() * standLimit + 1);
+  const userId = Math.round(Math.random() * (userLimit - 1) + 1);
+  const standID = Math.round(Math.random() * (standLimit - 1) + 1);
 
-  const rateSpeed = Math.round(Math.random() * 3 + 1);
-  const rateQuality = Math.round(Math.random() * 3 + 1);
+  const rateSpeed = Math.round(Math.random() * 2 +1);
+  const rateQuality = Math.round(Math.random() * 2 + 1);
 
   req('user', {
     userId: userId,
