@@ -15,7 +15,7 @@ module.exports = {
     name: {
       type: 'string'
     },
-    pets: {
+    stands: {
       collection: 'stand',
       via: 'type'
     }
