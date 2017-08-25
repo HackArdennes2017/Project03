@@ -10,7 +10,9 @@ module.exports = {
   attributes: {
     voteId: {
       type: 'integer',
-      autoIncrement: true
+      autoIncrement: true,
+      primaryKey: true,
+      unique: true
     },
     qualityRate: {
       type: 'integer'
