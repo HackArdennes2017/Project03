@@ -2,22 +2,30 @@
   {
     "type": 3,
     "name": "CAMPING 1 - AU DORMEUR DU VAL",
-    "description": "Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival"
+    "description": "Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival",
+    "GPSlongitude": "49.762355",
+    "GPSlatitude": "4.715170"
   },
   {
     "type": 3,
     "name": "CAMPING 2 - CAMPING DE LA VIEILLE MEUSE",
-    "description": "Tu as besoin d’un minimum de calme et d’espace pour dormir comme un bébé et ce ne sont pas 10 minutes de marche qui te décourageront."
+    "description": "Tu as besoin d’un minimum de calme et d’espace pour dormir comme un bébé et ce ne sont pas 10 minutes de marche qui te décourageront.",
+    "GPSlongitude": "49.762431",
+    "GPSlatitude": "4.714431"
   },
   {
     "type": 3,
     "name": "TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
-    "description": "Vivez l’aventure du camping du Cabaret Vert dans votre TIPI."
+    "description": "Vivez l’aventure du camping du Cabaret Vert dans votre TIPI.",
+    "GPSlongitude": "49.762315",
+    "GPSlatitude": "4.715196"
   },
   {
     "type": 4,
     "name": "Stand 1",
-    "description": ""
+    "description": "",
+    "GPSlongitude": "49.762755",
+    "GPSlatitude": "4.715050"
   },
   {
     "type": 4,
@@ -316,6 +324,3 @@
     "planId": 25
   }
 ]
-
-
-
