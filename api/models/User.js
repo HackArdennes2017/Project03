@@ -10,7 +10,9 @@ module.exports = {
   attributes: {
     userId: {
       type: 'integer',
-      autoIncrement: true
+      autoIncrement: true,
+      primaryKey: true,
+      unique: true
     },
     cookieId: {
       type: 'string'

@@ -10,7 +10,9 @@ module.exports = {
   attributes: {
     zoneId: {
       type: 'integer',
-      autoIncrement: true
+      autoIncrement: true,
+      primaryKey: true,
+      unique: true
     },
     name: {
       type: 'string'
