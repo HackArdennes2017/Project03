@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Test map</title>
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+</head>
+<body>
+<section id="stands">
+  <h1>List of stands</h1>
+</section>
+
+<div id="map"></div>
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgZnTdCgLGiFwx8nsnTB1IFxJYQwMETMw&callback=initMap"></script>
+
+<script>
+  // Test to add CV festival map to google maps
+
+  var overlay;
+
+  USGSOverlay.prototype = new google.maps.OverlayView();
+
+  function initMap() {
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: {lat: 49.7625675, lng: 4.7154458}
+    });
+
+
+    var srcImage = 'images/plan-site-cv.png';
+
+    /*var imageBounds = new google.maps.LatLngBounds(
+     new google.maps.LatLng(49.759000, 4.708949),
+     new google.maps.LatLng(49.765722, 4.719764));*/
+
+    //49.758906, 4.708575
+    //49.758671, 4.708897
+
+    //ok 49.765740, 4.719390
+    var imageBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.758906, 4.708575),
+      new google.maps.LatLng(49.765594, 4.719326));
+
+
+    overlay = new USGSOverlay(imageBounds, srcImage, map);
+
+    var iconBase = 'images/';
+    var icons = {
+      0: {
+        icon: iconBase + 'geolocation.png'
+      },
+      1: {
+        icon: iconBase + 'food.png'
+      },
+      2: {
+        icon: iconBase + 'drinks.png'
+      },
+      3: {
+        icon: iconBase + 'services.png'
+      }
+    };
+
+
+    <% stands.forEach(function(stand) { %>
+
+    var lat = '<%- stand.GPSlatitude %>';
+    var long = '<%- stand.GPSlongitude %>';
+    var iconType = '<%- stand.type %>';
+    var marker<%- stand.standId %>;
+
+    if (iconType != '' && lat != '' && long != '') {
+      marker<%- stand.standId %> = new google.maps.Marker({
+        position: new google.maps.LatLng(lat, long),
+        icon: icons[iconType].icon,
+        map: map
+      });
+      var contentString<%- stand.standId %> = '<div>'+
+        '<h1><%- stand.name %></h1>'+
+        '<div style="text-align:center;"><a class="btnVert" style="text-align:center; width: 75%;" href=/stand/<%- stand.standId %>>CHECK</a></div>'+
+        '</div>';
+
+      var infowindow<%- stand.standId %> = new google.maps.InfoWindow({
+        position: new google.maps.LatLng(lat, long),
+        content: contentString<%- stand.standId %>
+      });
+
+      marker<%- stand.standId %>.addListener('click', function() {
+        console.log(infowindow<%- stand.standId %>.position);
+        infowindow<%- stand.standId %>.open(map, marker<%- stand.standId %>);
+      });
+    }
+
+    <% }); %>
+
+    var markerGeoloc;
+    var infoWindowGeoloc = new google.maps.InfoWindow({map: map});
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var lat = position.coords.latitude;
+        var long = position.coords.longitude;
+        var iconType = '0';
+
+        markerGeoloc = new google.maps.Marker({
+          position: new google.maps.LatLng(lat, long),
+          icon: icons[iconType].icon,
+          map: map
+        });
+        /*
+         var contentStringGeoloc = '<div>'+
+         '<h1 class="firstHeading">Vous êtes ici !</h1><br>'+
+         '</div>';
+
+         infoWindowGeoloc.setPosition(new google.maps.LatLng(lat, long));
+         infoWindowGeoloc.setContent(contentStringGeoloc);
+
+         markerGeoloc.addListener('click', function() {
+         console.log(infowindowGeoloc.position);
+         infowindowGeoloc.open(map, markerGeoloc);
+         });*/
+
+      }, function() {
+        handleLocationError(true, infoWindowGeoloc, map.getCenter());
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindowGeoloc, map.getCenter());
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindowGeoloc.setPosition(pos);
+      infoWindowGeoloc.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+    }
+
+  }
+
+  /** @constructor */
+  function USGSOverlay(bounds, image, map) {
+
+    // Initialize all properties.
+    this.bounds_ = bounds;
+    this.image_ = image;
+    this.map_ = map;
+
+    // Define a property to hold the image's div. We'll
+    // actually create this div upon receipt of the onAdd()
+    // method so we'll leave it null for now.
+    this.div_ = null;
+
+    // Explicitly call setMap on this overlay.
+    this.setMap(map);
+  }
+
+  /**
+   * onAdd is called when the map's panes are ready and the overlay has been
+   * added to the map.
+   */
+  USGSOverlay.prototype.onAdd = function() {
+
+    var div = document.createElement('div');
+    div.style.borderStyle = 'none';
+    div.style.borderWidth = '0px';
+    div.style.position = 'absolute';
+    //div.style.opacity = '0.3';
+
+    // Create the img element and attach it to the div.
+    var img = document.createElement('img');
+    img.src = this.image_;
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.position = 'absolute';
+    img.style.transform = 'rotate(-8deg)';
+    div.appendChild(img);
+
+    this.div_ = div;
+
+    // Add the element to the "overlayLayer" pane.
+    var panes = this.getPanes();
+    panes.overlayLayer.appendChild(div);
+  };
+
+  USGSOverlay.prototype.draw = function() {
+
+    // We use the south-west and north-east
+    // coordinates of the overlay to peg it to the correct position and size.
+    // To do this, we need to retrieve the projection from the overlay.
+    var overlayProjection = this.getProjection();
+
+    // Retrieve the south-west and north-east coordinates of this overlay
+    // in LatLngs and convert them to pixel coordinates.
+    // We'll use these coordinates to resize the div.
+    var sw = overlayProjection.fromLatLngToDivPixel(this.bounds_.getSouthWest());
+    var ne = overlayProjection.fromLatLngToDivPixel(this.bounds_.getNorthEast());
+
+    // Resize the image's div to fit the indicated dimensions.
+    var div = this.div_;
+    div.style.left = sw.x + 'px';
+    div.style.top = ne.y + 'px';
+    div.style.width = (ne.x - sw.x) + 'px';
+    div.style.height = (sw.y - ne.y) + 'px';
+    div
+  };
+
+  // The onRemove() method will be called automatically from the API if
+  // we ever set the overlay's map property to 'null'.
+  USGSOverlay.prototype.onRemove = function() {
+    this.div_.parentNode.removeChild(this.div_);
+    this.div_ = null;
+  };
+  google.maps.event.addDomListener(window, 'load', initMap);
+
+</script>
+</html>

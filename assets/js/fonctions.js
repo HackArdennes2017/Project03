@@ -35,7 +35,7 @@ function eraseCookie(name) {
 
 
 
-// 2.  test cookie =====================================================	
+// 2.  test cookie =====================================================
 var visiteur = readCookie("visiteur");
 console.log('cookie : ' + visiteur);
 
