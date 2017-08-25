@@ -1,2 +1,3 @@
-# Project03
-HackArdennes17 Team03
+# WaitingTimes
+
+a [Sails](http://sailsjs.org) application
