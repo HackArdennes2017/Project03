@@ -34,13 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  },
   },  
   '/stand': {
     view: 'stand'
-  },  
-  
-    view: 'homepage'
   },
   '/statistics/hotpoint/:standId': 'StatsController.hotpoint',
   '/statistics/hotpoint': 'StatsController.hotpoint'
