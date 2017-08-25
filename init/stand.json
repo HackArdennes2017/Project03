@@ -1,179 +1,321 @@
 [
   {
-  "Service":"CAMPINGS", 
-  "name":"CAMPING 1 - AU DORMEUR DU VAL",
-  "description":"Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival",
+    "type": 3,
+    "name": "CAMPING 1 - AU DORMEUR DU VAL",
+    "description": "Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival"
   },
-  
   {
-  "Service":"CAMPINGS", 
-  "name":"CAMPING 2 - CAMPING DE LA VIEILLE MEUSE",
-  "description":"Tu as besoin d’un minimum de calme et d’espace pour dormir comme un bébé et ce ne sont pas 10 minutes de marche qui te décourageront.",
-  },  
-
-    {
-  "Service":"CAMPINGS", 
-  "name":"TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
-  "description":"Vivez l’aventure du camping du Cabaret Vert dans votre TIPI.",
+    "type": 3,
+    "name": "CAMPING 2 - CAMPING DE LA VIEILLE MEUSE",
+    "description": "Tu as besoin d’un minimum de calme et d’espace pour dormir comme un bébé et ce ne sont pas 10 minutes de marche qui te décourageront."
   },
-
-    {
-  "Service":"ACHATS BAYARDS", 
-  "name":"Stand 1",
-  "description":"",
+  {
+    "type": 3,
+    "name": "TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
+    "description": "Vivez l’aventure du camping du Cabaret Vert dans votre TIPI."
   },
-
-    {
-  "Service":"ACHATS BAYARDS", 
-  "name":"Stand 2",
-  "description":"",
+  {
+    "type": 4,
+    "name": "Stand 1",
+    "description": ""
   },
-  
-     {
-  "Service":"ACHATS BAYARDS", 
-  "name":"Stand 3",
-  "description":"",
-  }, 
-  
-     {
-  "Service":"POINTS INFORMATION", 
-  "name":"point-information ST JULIEN",
-  "description":"",
-  },   
-  
-      {
-  "Service":"POINTS INFORMATION", 
-  "name":"point-information du festival",
-  "description":"",
-  },    
-  
-        {
-  "Service":"BUVETTES", 
-  "name":"Eul bar du coin (1)",
-  "description":"",
+  {
+    "type": 4,
+    "name": "Stand 2",
+    "description": ""
   },
-  
-  "Service":"BUVETTES", 
-  "name":"La Macérienne - sans alcool (2)",
-  "description":"",
-  },  
-  
-  "Service":"BUVETTES", 
-  "name":"Bar à eau (3)",
-  "description":"",
-  },  
-    
-  "Service":"BUVETTES", 
-  "name":"Bar le Groin Groin (4)",
-  "description":"",
-  },    
-  
-  "Service":"BUVETTES", 
-  "name":"Le Temps des cérise (5)",
-  "description":"",
-  },   
-  
-  "Service":"BUVETTES", 
-  "name":"Bar à café (6)",
-  "description":"",
-  },     
- 
-   "Service":"BUVETTES", 
-  "name":"le Bateau ivre (7)",
-  "description":"",
-  },     
- 
- 
-   "Service":"BUVETTES", 
-  "name":"La R'Quinqure (8)",
-  "description":"",
-  },     
-  
-   "Service":"BUVETTES", 
-  "name":"Bar à Vins (9)",
-  "description":"",
-  },    
- 
-    "Service":"BUVETTES", 
-  "name":"Bar Ethnik (10)",
-  "description":"",
-  },   
- 
-     "Service":"BUVETTES", 
-  "name":"Bar La Lichette (11)",
-  "description":"",
-  },   
- 
-      "Service":"BUVETTES", 
-  "name":"L'Absolument Moderne (12)",
-  "description":"",
-  },   
- 
-      "Service":"RESTAURATION", 
-  "name":"La falafelle (13)",
-  "description":"",
-  },    
- 
-       "Service":"RESTAURATION", 
-  "name":"Omelette Ardennaises (14)",
-  "description":"",
-  },   
- 
-       "Service":"RESTAURATION", 
-  "name":"Burger d'Ardenne (15)",
-  "description":"",
-  },    
- 
-       "Service":"RESTAURATION", 
-  "name":"Friterie (16)",
-  "description":"",
-  },     
- 
-       "Service":"RESTAURATION", 
-  "name":"Au plaisir gourmand (17)",
-  "description":"",
-  }, 
-
-  
-       "Service":"RESTAURATION", 
-  "name":"Le Bar Back (18)",
-  "description":"",
-  },   
-  
-       "Service":"RESTAURATION", 
-  "name":"Friterie et Sandwichs (19)",
-  "description":"",
-  },    
-
-       "Service":"RESTAURATION", 
-  "name":"Pop Corn (20)",
-  "description":"",
-  },  
-
-       "Service":"SERVICES", 
-  "name":"Poste secours",
-  "description":"",
-  },    
-  
-       "Service":"SERVICES", 
-  "name":"Toilettes 1",
-  "description":"",
+  {
+    "type": 4,
+    "name": "Stand 3",
+    "description": ""
   },
-  
-        "Service":"SERVICES", 
-  "name":"Toilettes 2",
-  "description":"",
-  }, 
-  
-       "Service":"SERVICES", 
-  "name":"Toilettes 3",
-  "description":"",
-  },  
-  
-       "Service":"SERVICES", 
-  "name":"Entrée",
-  "description":"",
-  "GPSlongitude":"49.761465",
-  "GPSlatitude":"4.710950",
-  },    
+  {
+    "type": 5,
+    "name": "point-information ST JULIEN",
+    "description": ""
+  },
+  {
+    "type": 5,
+    "name": "point-information du festival",
+    "description": ""
+  },
+  {
+    "Service": "BUVETTES",
+    "name": "La Macérienne - sans alcool (2)",
+    "description": ""
+  },
+  {
+    "Service": "BUVETTES",
+    "name": "Bar à eau (3)",
+    "description": ""
+  },
+  {
+    "Service": "BUVETTES",
+    "name": "Bar le Groin Groin (4)",
+    "description": ""
+  },
+  {
+    "Service": "BUVETTES",
+    "name": "Le Temps des cérise (5)",
+    "description": ""
+  },
+  {
+    "Service": "SERVICES",
+    "name": "Poste secours",
+    "description": ""
+  },
+  {
+    "Service": "SERVICES",
+    "name": "Toilettes 1",
+    "description": ""
+  },
+  {
+    "Service": "SERVICES",
+    "name": "Toilettes 2",
+    "description": ""
+  },
+  {
+    "Service": "SERVICES",
+    "name": "Toilettes 3",
+    "description": ""
+  },
+  {
+    "name": "Le Bateau Ivre",
+    "description": "Spécialité bièreS belgeS",
+    "planId": 7,
+    "type": 1
+  },
+  {
+    "name": "Le Temps des Cerises",
+    "description": "Spécialité bièreS ardennaiSeS",
+    "planId": 5,
+    "type": 1
+  },
+  {
+    "name": "La R’quinqure",
+    "planId": 7,
+    "type": 1
+  },
+  {
+    "name": "Le Groin Groin",
+    "planId": 4,
+    "type": 1
+  },
+  {
+    "name": "Eul Bar Du Coin",
+    "type": 1,
+    "planId": 1
+  },
+  {
+    "name": "Le bar à vin",
+    "type": 1,
+    "planId": 9
+  },
+  {
+    "name": "bar a café - Point Infos ",
+    "type": 1,
+    "planId": 6
+  },
+  {
+    "name": "L’Absolument Moderne ",
+    "type": 1,
+    "planId": 12
+  },
+  {
+    "name": "Le Bar de la Macérienne",
+    "description": "bar SanS alcool",
+    "type": 1,
+    "planId": 2
+  },
+  {
+    "name": "LA GUINGUETTE",
+    "description": "buvette du tempS deS FreakS",
+    "type": 1,
+    "planId": 35
+  },
+  {
+    "name": "Le Bar Ethnik",
+    "description": "boiSSonS énergétiqueS",
+    "type": 1,
+    "planId": 10
+  },
+  {
+    "name": "LA LICHETTE",
+    "description": "la petite buvette du bayard Square garden",
+    "type": 1,
+    "planId": 11
+  },
+  {
+    "name": "La Falafel",
+    "zone": 2,
+    "type": 2,
+    "planId": 13
+  },
+  {
+    "name": "Chez Maman",
+    "zone": 1,
+    "type": 2,
+    "planId": 26
+  },
+  {
+    "name": "La Ferme",
+    "zone": 1,
+    "description": "paniniS 100% bio",
+    "type": 2,
+    "planId": 21
+  },
+  {
+    "name": "Exodia",
+    "zone": 1,
+    "description": "platS végétarienS",
+    "type": 2,
+    "planId": 22
+  },
+  {
+    "name": "Au Plaisir Gourmand",
+    "zone": 2,
+    "type": 2,
+    "planId": 17
+  },
+  {
+    "name": "Pop-Corn",
+    "zone": 3,
+    "type": 2,
+    "planId": 20
+  },
+  {
+    "name": "Burgers d’Ardenne",
+    "zone": 2,
+    "type": 2,
+    "planId": 15
+  },
+  {
+    "name": "L’œuf",
+    "zone": 3,
+    "type": 2,
+    "planId": 28
+  },
+  {
+    "name": "Le Bar Back",
+    "type": 2,
+    "planId": 18
+  },
+  {
+    "name": "POULETs RôTIS",
+    "zone": 1,
+    "type": 2,
+    "planId": 27
+  },
+  {
+    "name": "Friterie",
+    "zone": 2,
+    "type": 2,
+    "planId": 16
+  },
+  {
+    "name": "La Fricassée Ardennaise",
+    "zone": 1,
+    "type": 2,
+    "planId": 29
+  },
+  {
+    "name": "Croque-Maroilles",
+    "zone": 1,
+    "type": 2,
+    "planId": 24
+  },
+  {
+    "name": "Bar à Pâtes",
+    "zone": 1,
+    "type": 2,
+    "planId": 31
+  },
+  {
+    "name": "Les Omelettes du Lions Club",
+    "zone": 2,
+    "type": 2,
+    "planId": 14
+  },
+  {
+    "name": "Les Croûtes Ardennaises du Lions Club",
+    "zone": 1,
+    "type": 2,
+    "planId": 33
+  },
+  {
+    "name": "La Guinguette",
+    "zone": 4,
+    "type": 2,
+    "planId": 35
+  },
+  {
+    "name": "Le Jardin de Selma",
+    "zone": 1,
+    "description": "pizzaS et FouéeS",
+    "type": 2,
+    "planId": 32
+  },
+  {
+    "name": "Friterie et Sandwichs Chauds",
+    "zone": 3,
+    "type": 2,
+    "planId": 19
+  },
+  {
+    "name": "Les Spécialités Ardennaises",
+    "zone": 1,
+    "type": 2,
+    "planId": 29
+  },
+  {
+    "name": "Stand crêpeS",
+    "zone": 1,
+    "type": 2,
+    "planId": 30
+  },
+  {
+    "name": "La CharCuterie",
+    "zone": "5",
+    "type": 2,
+    "planId": 34
+  },
+  {
+    "name": "La FroMaGerie",
+    "zone": "5",
+    "type": 2,
+    "planId": 34
+  },
+  {
+    "name": "La ConFiSerie",
+    "zone": "5",
+    "type": 2,
+    "planId": 34
+  },
+  {
+    "name": "Le SaFran d’ardenneS",
+    "zone": "5",
+    "type": 2,
+    "planId": 34
+  },
+  {
+    "name": "LeS MaraîCherS",
+    "zone": "5",
+    "type": 2,
+    "planId": 34
+  },
+  {
+    "name": "La Fricassée Ardennaise",
+    "zone": 1,
+    "type": 2,
+    "planId": 23
+  },
+  {
+    "name": "Mother Road",
+    "zone": 1,
+    "type": 2,
+    "planId": 25
+  }
 ]
+
+
+
