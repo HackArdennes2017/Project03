@@ -1,0 +1,22 @@
+[
+  {
+    "zoneId": 1,
+    "name": "Bayard Square Garden"
+  },
+  {
+    "zoneId": 2,
+    "name": "PLaine de La MaCérienne"
+  },
+  {
+    "zoneId": 3,
+    "name": "Stade Bayard"
+  },
+  {
+    "zoneId": 4,
+    "name": "Le teMPS deS FreakS"
+  },
+  {
+    "zoneId": 5,
+    "name": "Le marché"
+  }
+]

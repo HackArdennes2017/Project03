@@ -1,0 +1,26 @@
+[
+  {
+    "name": "BUVETTES",
+    "serviceId": 1
+  },
+  {
+    "name": "RESTAURATION",
+    "serviceId": 2
+  },
+  {
+    "name":"CAMPINGS",
+    "serviceId": 3
+  },
+  {
+    "name":"ACHATS BAYARDS",
+    "serviceId": 4
+  },
+  {
+    "name":"POINTS INFORMATION",
+    "serviceId": 5
+  },
+  {
+    "name":"SERVICES",
+    "serviceId": 6
+  }
+]
