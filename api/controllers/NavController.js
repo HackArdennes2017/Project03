@@ -84,10 +84,23 @@ module.exports = {
   },
 
   vote: function (req, res) {
-	  console.log(req.session);
-	  res.json({
-      'cookieUser': req.cookies.visiteur,
-      form: req.body
+    User.findOrCreate({cookieId: req.cookies.visiteur}).exec(function afterFind(err, user) {
+      if (err) {
+        res.status(500).send(err);
+      }
+      else {
+        const newVote = {voter: user.userId, voteTarget: req.body.standId};
+        newVote[req.body.typeVote] = req.body.rate;
+
+        Vote.create(newVote).exec(function afterFind(err, vote) {
+          if (err) {
+            res.status(500).send(err);
+          }
+          else {
+            res.redirect('/stand/'+req.body.standId);
+          }
+        });
+      }
     });
   }
 };
