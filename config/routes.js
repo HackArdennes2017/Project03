@@ -32,10 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  '/': 'HomeController.index',
   '/stand/:standId': 'NavController.stand',
+  '/map': 'MapController.index',
   '/statistics/hotpoint/:standId': 'StatsController.hotpoint',
   '/statistics/hotpoint': 'StatsController.hotpoint',
   'post /vote': 'NavController.vote'
