@@ -45,7 +45,7 @@ module.exports.connections = {
   serverMySQL: {
      adapter: 'sails-mysql',
      host: 'localhost',
-     // user: 'YOUR_MYSQL_USER', //optional
+     user: 'root',
      password: process.env.SQL_PASSWORD, //optional
      database: 'lamaline'
   },
