@@ -14,48 +14,8 @@
     "GPSlongitude": "4.715484",
     "GPSlatitude": "49.761267"
   },
-  {
-    "type": 3,
-    "name": "TIPIS - DANS UN TIPI AU SEIN DU CAMPING N°2",
-    "description": "Vivez l’aventure du camping du Cabaret Vert dans votre TIPI.",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
-  {
-    "type": 4,
-    "name": "Stand 1",
-    "description": "",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
-  {
-    "type": 4,
-    "name": "Stand 2",
-    "description": "",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
-  {
-    "type": 4,
-    "name": "Stand 3",
-    "description": "",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
-  {
-    "type": 5,
-    "name": "point-information ST JULIEN",
-    "description": "",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
-  {
-    "type": 5,
-    "name": "point-information du festival",
-    "description": "",
-    "GPSlongitude": "",
-    "GPSlatitude": ""
-  },
+
+
   {
     "Service": "BUVETTES",
     "name": "Bar à eau (3)",
@@ -94,7 +54,7 @@
   },
   {
     "name": "Le Bateau Ivre",
-    "description": "Spécialité bièreS belgeS",
+    "description": "Spécialité bières belges, Chimay sera encore à l’honneur (Chimay triple, Chimay brune et dorée)ainsi que les traditionnelles Chouffe, Kriek Liefmans, Blanche de Namur, Super des Fagnes",
     "planId": 7,
     "type": 1,
     "GPSlongitude": "4.713730",
@@ -102,7 +62,7 @@
   },
   {
     "name": "Le Temps des Cerises",
-    "description": "Spécialité bièreS ardennaiSeS",
+    "description": "Spécialité bières ardennaises",
     "planId": 5,
     "type": 1,
     "GPSlongitude": "4.713435",
@@ -170,7 +130,7 @@
   },
   {
     "name": "LA LICHETTE",
-    "description": "la petite buvette du bayard Square garden",
+    "description": "La petite buvette du bayard Square garden",
     "type": 1,
     "planId": 11,
     "GPSlongitude": "4.714095",
