@@ -17,15 +17,15 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
+  models: {
+     connection: 'serverMySQL'
+  },
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
 
-  // port: 80,
+  port: 443,
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
@@ -34,5 +34,11 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
+
+  ssl: {
+    ca: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/chain.pem')),
+    key: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/privkey.pem')),
+    cert: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/cert.pem'))
+  }
 
 };

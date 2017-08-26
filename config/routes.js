@@ -34,12 +34,11 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }, 
-  '/stand': {
-    view: 'stand'
   },
+  '/stand/:standId': 'NavController.stand',
   '/statistics/hotpoint/:standId': 'StatsController.hotpoint',
-  '/statistics/hotpoint': 'StatsController.hotpoint'
+  '/statistics/hotpoint': 'StatsController.hotpoint',
+  'post /vote': 'NavController.vote'
 
   /***************************************************************************
   *                                                                          *
