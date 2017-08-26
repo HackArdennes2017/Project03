@@ -5,7 +5,6 @@
     "description": "Tu n’as pas peur de faire la fête et tu veux être au plus près du site du festival",
     "GPSlongitude": "4.710345",
     "GPSlatitude": "49.762642"
-
   },
   {
     "type": 3,
@@ -67,7 +66,6 @@
     "type": 1,
     "GPSlongitude": "4.713435",
     "GPSlatitude": "49.764496"
-
   },
   {
     "name": "La R’quinqure",
@@ -89,7 +87,6 @@
     "planId": 1,
     "GPSlongitude": "4.711633",
     "GPSlatitude": "49.763477"
-
   },
   {
     "name": "Le bar à vin",
@@ -135,7 +132,6 @@
     "planId": 11,
     "GPSlongitude": "4.714095",
     "GPSlatitude": "49.762961"
-
   },
   {
     "name": "La Falafel",
@@ -178,7 +174,6 @@
     "planId": 17,
     "GPSlongitude": "4.712614",
     "GPSlatitude": "49.764049"
-
   },
   {
     "name": "Pop-Corn",
@@ -193,7 +188,7 @@
     "zone": 2,
     "type": 2,
     "planId": 15,
-    "GPSlongitude": "	4.712352",
+    "GPSlongitude": "4.712352",
     "GPSlatitude": "49.764040"
   },
   {
@@ -258,7 +253,6 @@
     "planId": 14,
     "GPSlongitude": "4.712201",
     "GPSlatitude": "49.764028"
-
   },
   {
     "name": "Les Croûtes Ardennaises du Lions Club",
@@ -322,7 +316,7 @@
     "zone": "5",
     "type": 2,
     "planId": 34,
-    "GPSlongitude": "	4.715299",
+    "GPSlongitude": "4.715299",
     "GPSlatitude": "49.762965"
   },
   {
