@@ -143,6 +143,18 @@ a[class="btnDetail"] { width:75%; margin:1%; padding:2%; background-color:#75a70
 a[class="btnDetail"]:hover { opacity:0.8 }
 
 
+button[class="btnJaune"] { width:25%; margin:1%; padding:2%; background-color:#d5981a;background-image: linear-gradient(0deg, #d5981a 0%, #d9a230 50%); border-radius:5px; color:#fff; display:inline-block; text-decoration:none; }
+button[class="btnJaune"]:hover { opacity:0.8 }
+
+button[class="btnRouge"] { width:25%; margin:1%; padding:2%; background-color:#dc0404;background-image: linear-gradient(0deg, #dc0404 0%, #df1d1d 50%); border-radius:5px; color:#fff; display:inline-block; text-decoration:none;  }
+button[class="btnRouge"]:hover { opacity:0.8 }
+
+button[class="btnVert"] { width:25%; margin:1%; padding:2%; background-color:#75a703;background-image: linear-gradient(0deg, #75a703 0%, #82af1c 50%);  border-radius:5px; color:#fff; display:inline-block; text-decoration:none;  }
+button[class="btnVert"]:hover { opacity:0.8 }
+
+button[class="btnDetail"] { width:75%; margin:1%; padding:2%; background-color:#75a703;background-image: linear-gradient(0deg, #75a703 0%, #82af1c 50%);  border-radius:5px; color:#fff; display:inline-block; text-decoration:none;  }
+button[class="btnDetail"]:hover { opacity:0.8 }
+
 .statuts {
   background-color: #ccc;
   padding: 1%;
