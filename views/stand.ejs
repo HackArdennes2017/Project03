@@ -37,6 +37,7 @@
 				<h3><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> Temps d'attente</h3>
           <form method="post" action="/vote">
             <input type="hidden" name="typeVote" value="speedRate">
+            <input type="hidden" name="standId" value="<%= stand.standId%>">
             <button type="submit" name="rate" value="1" class="btnRouge" href="#"><i class="fa fa fa-battery-quarter fa-2x" aria-hidden="true"></i> <br> Mauvais </button>
             <button type="submit" name="rate" value="2" class="btnJaune" href="#"><i class="fa fa fa-battery-half fa-2x" aria-hidden="true"></i>  <br>Moyen </button>
             <button type="submit" name="rate" value="3" class="btnVert" href="#"><i class="fa fa fa-battery fa-2x" aria-hidden="true"></i> <br> Bon </button>
@@ -44,17 +45,25 @@
 				</div><br>
 
 				<div style="margin: 10px;">
-					<h3><i class="fa fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i> Appréciation du service</h3>
-					<a class="btnRouge" href="#"><i class="fa fa fa-battery-quarter fa-2x" aria-hidden="true"></i> <br> Mauvais </a>
-					<a class="btnJaune" href="#"><i class="fa fa fa-battery-half fa-2x" aria-hidden="true"></i>  <br>Moyen </a>
-					<a class="btnVert" href="#"><i class="fa fa fa-battery fa-2x" aria-hidden="true"></i> <br> Bon </a>
-				</div><br>
+          <h3><i class="fa fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i> Appréciation du service</h3>
+          <form method="post" action="/vote">
+            <input type="hidden" name="typeVote" value="qualityRate">
+            <input type="hidden" name="standId" value="<%= stand.standId%>">
+            <button type="submit" name="rate" value="1" class="btnRouge" href="#"><i class="fa fa fa-battery-quarter fa-2x" aria-hidden="true"></i> <br> Mauvais </button>
+            <button type="submit" name="rate" value="2" class="btnJaune" href="#"><i class="fa fa fa-battery-half fa-2x" aria-hidden="true"></i>  <br>Moyen </button>
+            <button type="submit" name="rate" value="3" class="btnVert" href="#"><i class="fa fa fa-battery fa-2x" aria-hidden="true"></i> <br> Bon </button>
+          </form>
+        </div><br>
 
 				<div style="margin: 10px;">
-					<h3> <i class="fa fa-signal fa-2x aria-hidden="true"></i> Développement durable</h3>
-					<a class="btnRouge" href="#"><i class="fa fa fa-battery-quarter fa-2x" aria-hidden="true"></i> <br> Mauvais </a>
-					<a class="btnJaune" href="#"><i class="fa fa fa-battery-half fa-2x" aria-hidden="true"></i>  <br>Moyen </a>
-					<a class="btnVert" href="#"><i class="fa fa fa-battery fa-2x" aria-hidden="true"></i> <br> Bon </a>
+					<h3> <i class="fa fa-signal fa-2x" aria-hidden="true"></i> Développement durable</h3>
+          <form method="post" action="/vote">
+            <input type="hidden" name="typeVote" value="environmentRate">
+            <input type="hidden" name="standId" value="<%= stand.standId%>">
+            <button type="submit" name="rate" value="1" class="btnRouge" href="#"><i class="fa fa fa-battery-quarter fa-2x" aria-hidden="true"></i> <br> Mauvais </button>
+            <button type="submit" name="rate" value="2" class="btnJaune" href="#"><i class="fa fa fa-battery-half fa-2x" aria-hidden="true"></i>  <br>Moyen </button>
+            <button type="submit" name="rate" value="3" class="btnVert" href="#"><i class="fa fa fa-battery fa-2x" aria-hidden="true"></i> <br> Bon </button>
+          </form>
 				</div><br>
 
 
