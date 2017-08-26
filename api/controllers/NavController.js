@@ -79,7 +79,6 @@ module.exports = {
                   }
                 });
               });
-              console.log(hotness);
               res.view('stand', {stand: stand, stats: hotness[req.params.standId]});
             }
           });
