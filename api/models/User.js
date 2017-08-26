@@ -15,7 +15,8 @@ module.exports = {
       unique: true
     },
     cookieId: {
-      type: 'string'
+      type: 'string',
+      unique: true
     },
     votes: {
       collection: 'vote',
