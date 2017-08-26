@@ -49,10 +49,14 @@ module.exports = {
               Object.keys(hotness).forEach((key) => {
                 Object.keys(hotness[key]).forEach((fieldRate) => {
                   let sum = 0;
+                  hotness[key][fieldRate] = hotness[key][fieldRate].filter((rate) => {
+                    return typeof rate === 'number';
+                  });
+
                   hotness[key][fieldRate].forEach((rate) => {
                     sum +=rate;
                   });
-                  if (sum !== 0) {
+                  if (sum !== 0 || typeof sum !== 'number') {
                     const average = sum / hotness[key][fieldRate].length;
                     hotness[key][fieldRate] = {
                       average: average
