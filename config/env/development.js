@@ -21,10 +21,6 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
 
-  ssl: {
-    ca: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/chain.pem')),
-    key: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/privkey.pem')),
-    cert: require('fs').readFileSync(require('path').resolve('/etc/letsencrypt/live/team03.hackardennes.com/cert.pem'))
-  }
+  port: 80
 
 };
